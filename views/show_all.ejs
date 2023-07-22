@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show All Objects</title>
+</head>
+<body>
+<h1>All Objects</h1>
+<ul>
+    <% objects.forEach((object) => { %>
+        <li>
+            <p>Name: <%= object.name %></p>
+            <p>Image: <%= object.image %></p>
+            <p>State: <%= object.state %></p>
+        </li>
+    <% }); %>
+</ul>
+</body>
+</html>
